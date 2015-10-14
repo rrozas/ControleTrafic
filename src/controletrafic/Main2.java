@@ -308,15 +308,15 @@ conf.SIM.ListeLignes.add(new Line2D.Double(C3[0], C3[1], C9[0], C9[1]));
              
                 conf.R.ListeArcs.elementAt(i).Ajouter_Suivant(conf.R.ListeArcs.elementAt(j), 10);
             }
-        // conf.R.Ajouter_Source("S1", 5, 1);
-       //conf.R.Ajouter_Source("S1", 10,701);
+         conf.R.Ajouter_Source("S1", 5, 1);
+         conf.R.Ajouter_Source("S1", 10,701);
          conf.R.Ajouter_Source("S1", 5, 403);
          conf.R.Ajouter_Source("S1", 5, 255);
          conf.R.Ajouter_Source("S1", 5, 793);
          conf.R.Ajouter_Source("S1", 5, 633);
          conf.R.Ajouter_Source("S1", 5, 571);
-           //conf.R.Ajouter_Source("S1", 5, 471);
-           //conf.R.Ajouter_Source("S1", 5, 465);
+         conf.R.Ajouter_Source("S1", 5, 471);
+         conf.R.Ajouter_Source("S1", 5, 465);
         conf.R.Ajouter_Source("S1", 10,596);
         for (int i=0; i< conf.R.ListeArcs.size(); i++)
         {

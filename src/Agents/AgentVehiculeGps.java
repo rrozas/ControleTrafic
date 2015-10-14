@@ -221,10 +221,22 @@ public class AgentVehiculeGps extends Agent {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-        		System.out.format("Arc actuel :%d",arcActuel.code_arc);
+        		//System.out.format("Arc actuel :%d",arcActuel.code_arc);
         		//System.exit(0);
             switch (etape) {
-                case 0: {// changement d'arc 
+	            case 0: {
+	                if(arcActuel.occuper(pos+1, 'g')){
+	                    arcActuel.liberer(pos, 'g');
+	                    pos++;
+	                }               
+	                
+	                if(pos==arcActuel.nbre_cel-1)
+	                	etape=2;
+	                else    
+	                	etape=0;
+	            }
+	            break;
+                case 1: {// changement d'arc 
                    if(arcSuivant.occuper(0,'g')){
                 	arcActuel.liberer(pos,'g');
                 	arcActuel = arcSuivant; 
@@ -241,27 +253,16 @@ public class AgentVehiculeGps extends Agent {
                    if(pos==arcActuel.nbre_cel-1)
                    	etape=2;
                    else    
-                   	etape=1;
+                   	etape=0;
                    
-                }break;
-                case 1: {
-                    if(arcActuel.occuper(pos+1, 'g')){
-                        arcActuel.liberer(pos, 'g');
-                        pos++;
-                    }               
-                    
-                    if(pos==arcActuel.nbre_cel-1)
-                    	etape=2;
-                    else    
-                    	etape=1;
                 }
                 break;
                 case  2:{
-                	 arcSuivant = path.get(path_step);
+                	 arcSuivant = AVG.R.Rech_Arc(path.get(path_step).code_arc);
                 	 path_step ++;		
 		             System.out.println("reponse depuis gps ARc " + arcSuivant);
 		
-		             etape=0;
+		             etape=1;
 
                 }
                 break;

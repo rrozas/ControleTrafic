@@ -68,7 +68,7 @@ public class FenSim extends javax.swing.JFrame {
         sim.demarrer_simul(can, g);       
         this.setVisible(true);
         this.sim.vitesse_simul=500;
-        //this.setExtendedState(this.getExtendedState() | FenSim.MAXIMIZED_BOTH);
+        this.setExtendedState(this.getExtendedState() | FenSim.MAXIMIZED_BOTH);
     
         //this.can.doLayout();
       
