@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="Lib/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="Lib/commons-codec/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="Lib/gnujaxp.jar"/>
+	<classpathentry kind="lib" path="Lib/http.jar"/>
+	<classpathentry kind="lib" path="Lib/iiop.jar"/>
+	<classpathentry kind="lib" path="Lib/iText-2.1.5.jar"/>
+	<classpathentry kind="lib" path="Lib/jade.jar"/>
+	<classpathentry kind="lib" path="Lib/jadeTools.jar"/>
+	<classpathentry kind="lib" path="Lib/jcommon-1.0.16.jar"/>
+	<classpathentry kind="lib" path="Lib/junit.jar"/>
+	<classpathentry kind="lib" path="Lib/swtgraphics2d.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="Lib/jfreechart-1.0.13.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
